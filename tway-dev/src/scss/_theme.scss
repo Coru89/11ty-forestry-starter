@@ -1,0 +1,77 @@
+:root {
+  // Pull the tokens and generate custom props
+  @each $color in $colors {
+     #{'--color-' + nth($color, 1)}: #{nth($color, 2)};
+  }
+
+  // global variables
+  --theme-box-shadow: #{0 16px 24px 2px rgba(29,17,51,.04),0 6px 32px 4px rgba(9,32,77,.12),0 8px 12px -5px rgba(29,17,51,.12)};
+
+
+  // Set theme aliases
+  --color-mode: 'light';
+  --color-bg: #{get-color('light')};
+  --color-bg-glare: #{get-color('light')};
+  --color-text: #{get-color('dark')};
+  --color-text-glare: #{get-color('dark')};
+  --color-selection-text: #{get-color('light')};
+  --color-selection-bg: #{get-color('dark')};
+  --color-stroke: #{get-color('mid')};
+  --color-action-bg: #{get-color('primary')};
+  --color-action-text: #{get-color('light')};
+  --color-theme-primary: #{get-color('primary')};
+  --color-theme-primary-glare: #{get-color('primary-glare')};
+  --color-theme-highlight: #{get-color('highlight')};
+  --color-theme-highlight-block: #{get-color('highlight')};
+
+  //for dark mode toggle button
+  --color-theme-toggle-icon: #{get-color('light')};
+  --color-theme-toggle-bg: var(--color-action-bg);
+
+    // nav
+  --color-nav-menu-text: #{get-color('dark')};
+  --color-nav-menu-bg: #{get-color('light')};
+  --color-nav-active-accent: #{get-color('primary')};
+  
+}
+
+@include dark-mode() {
+  --color-bg: #{get-color('dark')};
+  --color-bg-glare: #{get-color('slate')};
+  --color-text: #{get-color('light')};
+  --color-selection-text: #{get-color('dark')};
+  --color-selection-bg: #{get-color('light')};
+  --color-stroke: #{get-color('slate')};
+  --color-theme-primary: #{lighten(get-color('primary'), 50%)};
+  --color-theme-primary-glare: #{lighten(get-color('primary-glare'), 50%)};
+  --color-action-bg: var(--color-theme-primary-glare);
+  --color-action-text: #{get-color('dark')};
+  --color-theme-highlight: #{get-color('highlight')};
+  --color-theme-highlight-block: #{get-color('slate')};
+  --color-theme-feature-text: #{get-color('highlight')};
+
+  // for dark mode toggle button
+  --color-theme-toggle-icon: #{get-color('dark')};
+  --color-theme-toggle-bg: #{get-color('highlight')};
+
+    // nav
+    --color-nav-menu-text: #{get-color('dark')};
+    --color-nav-menu-bg: #{get-color('light')};
+    --color-nav-active-accent: #{get-color('highlight')};
+    
+}
+
+body {
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+main {
+  overflow: hidden;
+}
+
+::selection {
+  color: var(--color-selection-text);
+  background-color: var(--color-selection-bg);
+}
+

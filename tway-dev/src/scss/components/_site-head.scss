@@ -1,0 +1,25 @@
+.site-head {
+  padding: get-size(base);
+
+  &__wrapper {
+    @include wrapper;
+  }
+
+  &__site-name {
+    color: var(--color-text);
+    font-size: get-font-size(600);
+    font-weight: 700;
+    outline: none;
+    text-decoration: none;
+  }
+
+  &__inner {
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include media-query(md) {
+      display: flex;
+    }
+  }
+}
