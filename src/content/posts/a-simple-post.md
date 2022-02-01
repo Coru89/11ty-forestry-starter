@@ -5,7 +5,7 @@ tags:
 - demo-content
 - simple-post
 - blog
-image: "/./switch.jpg"
+image: ''
 
 ---
 A simple post to demonstrate how a normal blog post looks. Content is
