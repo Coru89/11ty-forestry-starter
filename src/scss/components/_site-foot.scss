@@ -6,7 +6,7 @@
   padding: get-size(700) 0 get-size(900) 0;
 
   &__wrapper {
-    @include wrapper;
+    @include panel-container;
   }
 
   &__inner {

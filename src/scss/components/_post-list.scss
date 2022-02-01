@@ -3,7 +3,7 @@
   padding-top: get-size(700);
 
   &__wrapper {
-    @include inner-wrapper;
+    @include panel-container;
   }
 
   &__heading {

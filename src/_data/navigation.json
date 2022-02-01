@@ -6,11 +6,6 @@
       "external": false,
       "items": [
         {
-          "text": "Style Guide",
-          "url": "/styleguide",
-          "external": false
-        },
-        {
           "text": "404",
           "url": "/404",
           "external": false
@@ -18,19 +13,24 @@
       ]
     },
     {
-      "text": "About",
-      "url": "/about",
-      "external": true
+      "text": "Posts",
+      "url": "/posts",
+      "external": false
     },
     {
-      "text": "Insights",
-      "url": "/insights",
+      "text": "About",
+      "url": "/about",
       "external": false
     },
     {
       "text": "Contact",
       "url": "/contact",
       "external": false
+    },
+    {
+      "text": "Style Guide",
+      "url": "/styleguide",
+      "external": true
     }
   ]
 }

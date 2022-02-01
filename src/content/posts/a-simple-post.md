@@ -1,5 +1,5 @@
 ---
-title: A simple post - dev edit
+title: A simple post
 date: 2020-06-08
 tags:
 - demo-content
