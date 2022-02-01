@@ -6,4 +6,4 @@ layout: layouts/page.njk
 ---
 Services here
 
-<img scr="images/demo-image-2.jpg" />
+![](images/demo-image-2.jpg)![](images/demo-image-1.jpg)
