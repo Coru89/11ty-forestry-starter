@@ -10,54 +10,54 @@
 
   // Set theme aliases
   --color-mode: 'light';
-  --color-bg: #{get-color('light')};
-  --color-bg-glare: #{get-color('light')};
-  --color-text: #{get-color('dark')};
-  --color-text-glare: #{get-color('dark')};
-  --color-selection-text: #{get-color('light')};
-  --color-selection-bg: #{get-color('dark')};
-  --color-stroke: #{get-color('mid')};
+  --color-bg: #{get-color(white)};
+  --color-bg-glare: #{get-color(white)};
+  --color-text: #{get-color(black)};
+  --color-text-glare: #{get-color(black)};
+  --color-selection-text: #{get-color(white)};
+  --color-selection-bg: #{get-color(black)};
+  --color-stroke: #{get-color(grey)};
   --color-action-bg: #{get-color('primary')};
-  --color-action-text: #{get-color('light')};
+  --color-action-text: #{get-color(white)};
   --color-theme-primary: #{get-color('primary')};
-  --color-theme-primary-glare: #{get-color('primary-glare')};
-  --color-theme-highlight: #{get-color('highlight')};
-  --color-theme-highlight-block: #{get-color('highlight')};
+  --color-theme-primary-glare: #{get-color('primary-light')};
+  --color-theme-highlight: #{get-color('primary')};
+  --color-theme-highlight-block: #{get-color('primary-light')};
 
   //for dark mode toggle button
-  --color-theme-toggle-icon: #{get-color('light')};
+  --color-theme-toggle-icon: #{get-color(white)};
   --color-theme-toggle-bg: var(--color-action-bg);
 
     // nav
-  --color-nav-menu-text: #{get-color('dark')};
-  --color-nav-menu-bg: #{get-color('light')};
+  --color-nav-menu-text: #{get-color(black)};
+  --color-nav-menu-bg: #{get-color(white)};
   --color-nav-active-accent: #{get-color('primary')};
   
 }
 
 @include dark-mode() {
-  --color-bg: #{get-color('dark')};
+  --color-bg: #{get-color(black)};
   --color-bg-glare: #{get-color('slate')};
-  --color-text: #{get-color('light')};
-  --color-selection-text: #{get-color('dark')};
-  --color-selection-bg: #{get-color('light')};
+  --color-text: #{get-color(white)};
+  --color-selection-text: #{get-color(black)};
+  --color-selection-bg: #{get-color(white)};
   --color-stroke: #{get-color('slate')};
   --color-theme-primary: #{lighten(get-color('primary'), 50%)};
-  --color-theme-primary-glare: #{lighten(get-color('primary-glare'), 50%)};
+  --color-theme-primary-glare: #{lighten(get-color('primary-light'), 50%)};
   --color-action-bg: var(--color-theme-primary-glare);
-  --color-action-text: #{get-color('dark')};
-  --color-theme-highlight: #{get-color('highlight')};
+  --color-action-text: #{get-color(black)};
+  --color-theme-highlight: #{get-color('primary')};
   --color-theme-highlight-block: #{get-color('slate')};
-  --color-theme-feature-text: #{get-color('highlight')};
+  --color-theme-feature-text: #{get-color(white)};
 
   // for dark mode toggle button
-  --color-theme-toggle-icon: #{get-color('dark')};
-  --color-theme-toggle-bg: #{get-color('highlight')};
+  --color-theme-toggle-icon: #{get-color(white)};
+  --color-theme-toggle-bg: #{get-color('primary')};
 
-    // nav
-    --color-nav-menu-text: #{get-color('dark')};
-    --color-nav-menu-bg: #{get-color('light')};
-    --color-nav-active-accent: #{get-color('highlight')};
+  // nav
+  --color-nav-menu-text: #{get-color(white)};
+  --color-nav-menu-bg: #{get-color(white)};
+  --color-nav-active-accent: #{get-color('primary')};
     
 }
 

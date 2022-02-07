@@ -1,11 +1,12 @@
 @function get-color($key) {
+  @warn #{'key' + $key};
   $response: map-get($colors, $key);
 
   @if ($response) {
     @return $response;
   }
 
-  @warn #{'Color "' + $key + '" not found in $config-colors'};
+  @warn #{'Color "' + $key + '" not found in tokens'};
 
   @return null;
 }
@@ -17,7 +18,7 @@
     @return #{ $response };
   }
 
-  @warn #{'Font "' + $key + '" not found in $config-fonts'};
+  @warn #{'Font "' + $key + '" not found in tokens'};
 
   @return null;
 }
@@ -29,7 +30,7 @@
     @return #{ $response };
   }
 
-  @warn #{'Font "' + $key + '" not found in $config-fonts'};
+  @warn #{'Font "' + $key + '" not found in tokens'};
 
   @return null;
 }
@@ -41,7 +42,7 @@
     @return $response;
   }
 
-  @warn #{'Size "' + $ratio-key + '" not found in $stalfos-size-scale'};
+  @warn #{'Size "' + $ratio-key + '" not found in tokens'};
 
   @return null;
 }

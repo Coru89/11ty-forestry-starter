@@ -4,8 +4,6 @@
   &__list {
     -ms-overflow-style: none;
     -webkit-overflow-scrolling: touch;
-    // Add padding and neg margin to allow focus style visibility
-    //overflow-x: hidden;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +12,7 @@
     padding: 0.5rem;
 
   & > .nav__item {
+    color: var(--color-nav-menu-text);
 
     &:not(:last-child){
       margin-right: get-size(500);
@@ -59,7 +58,7 @@
   &__sublist {
     background: var(--color-nav-menu-bg);
     box-shadow: var(--theme-box-shadow);
-    color: var(--color-nav-menu-text);
+    color: var(--color-black);
     display: none;
     margin-top: get-size(base);
     padding: 0 24px;

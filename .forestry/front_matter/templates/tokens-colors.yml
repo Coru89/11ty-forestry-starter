@@ -39,49 +39,79 @@ fields:
     label: primary
     config:
       color_format: Hex
-    default: "#173854"
+    default: "#148948"
   - type: color
-    name: primary-shade
-    label: primary-shade
+    name: primary-light
+    label: primary-light
     config:
       color_format: Hex
-    default: "#102538"
+    default: "#3B9F63"
   - type: color
-    name: primary-glare
-    label: primary-glare
+    name: secondary
+    label: Secondary
     config:
       color_format: Hex
-    default: "#22547c"
+    default: "#005D80"
   - type: color
-    name: highlight
-    label: highlight
+    name: secondary-dark
+    label: Secondary Dark
     config:
       color_format: Hex
-    default: "#845C8E"
+    default: "#00394E"
   - type: color
-    name: light
-    label: light
+    name: secondary-light
+    label: Secondary Light
+    config:
+      color_format: Hex
+    default: "#007FAD"
+  - type: color
+    name: white
+    label: white
     config:
       color_format: Hex
     default: "#ffffff"
   - type: color
-    name: mid
-    label: mid
+    name: grey
+    label: grey
     config:
       color_format: Hex
-    default: "#cccccc"
+    default: "#CDCDCD"
   - type: color
-    name: dark
-    label: dark
+    name: grey-light
+    label: grey
     config:
       color_format: Hex
-    default: "#333333"
+    default: "#F4F4F4"
+  - type: color
+    name: black
+    label: black
+    config:
+      color_format: Hex
+    default: "#222222"
   - type: color
     name: slate
     label: slate
     config:
       color_format: Hex
     default: "#404040"
+  - type: color
+    name: tertiary-1
+    label: Tertiary 1
+    config:
+      color_format: Hex
+    default: "#F06060"
+  - type: color
+    name: tertiary-2
+    label: Tertiary 2
+    config:
+      color_format: Hex
+    default: "#FCB813"
+  - type: color
+    name: tertiary-3
+    label: Tertiary 3
+    config:
+      color_format: Hex
+    default: "#FEDF6F"
 - type: field_group
   name: fonts
   label: fonts
