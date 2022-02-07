@@ -10,7 +10,7 @@ socialImage: ''
 {% import "macros/macros.njk" as macro with context %}
 <!-- do not delete --> 
 
-<p>Get started now by <a href="https://app.netlify.com/start/deploy?repository=https://github.com/coru89/11ty-forestry-starter">deploying Hylia to Netlify.</a>
+<p>Get started now by <a href="https://app.netlify.com/start/deploy?repository=https://github.com/coru89/11ty-forestry-starter">deploying to Netlify.</a>
 </p>
 <br>
 <p>
